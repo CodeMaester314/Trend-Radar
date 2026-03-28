@@ -1,0 +1,25 @@
+{
+  "name": "trendradar",
+  "version": "1.0.0",
+  "description": "Dropshipping trend detector MVP",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "ingest": "node src/jobs/runIngest.js"
+  },
+  "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "axios": "^1.13.6",
+    "better-sqlite3": "^12.8.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "google-trends-api": "^4.9.2",
+    "prisma": "^7.5.0"
+  }
+}

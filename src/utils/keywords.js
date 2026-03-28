@@ -1,0 +1,17 @@
+export const seedKeywords = [
+    "portable blender",
+    "posture corrector",
+    "ice face roller",
+    "desk vacuum",
+    "mini printer",
+    "led mask",
+    "sunset lamp",
+    "car organizer",
+    "pet hair remover",
+    "magnetic phone holder",
+    "self stirring mug",
+    "under desk treadmill",
+    "mushroom lamp",
+    "smart water bottle",
+    "compression socks",
+];

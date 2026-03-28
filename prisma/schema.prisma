@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model ProductTrend {
+  id           Int      @id @default(autoincrement())
+  keyword      String
+  source       String
+  mentions     Int      @default(0)
+  searchGrowth Float    @default(0)
+  trendScore   Float    @default(0)
+  status       String   @default("watch")
+  sampleSize   Int      @default(0)
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
