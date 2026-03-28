@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendRadar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold mb-3">TrendRadar</h1>
+            <p class="text-slate-400 text-lg">
+                Enter product keywords and get trend scores instantly.
+            </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 shadow-xl">
+            <label for="keywords" class="block text-sm font-medium text-slate-300 mb-2">
+                Enter keywords
+            </label>
+            <textarea id="keywords" rows="4"
+                class="w-full rounded-xl bg-slate-800 border border-slate-700 text-white p-4 outline-none focus:border-emerald-400"
+                placeholder="portable blender, mini printer, sunset lamp"></textarea>
+
+            <div class="flex items-center gap-3 mt-4">
+                <button id="analyzeBtn"
+                    class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-5 py-3 rounded-xl">
+                    Analyze Trends
+                </button>
+
+                <button id="sampleBtn"
+                    class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-5 py-3 rounded-xl">
+                    Load Sample Keywords
+                </button>
+            </div>
+
+            <p id="statusText" class="text-slate-400 text-sm mt-4"></p>
+        </div>
+
+        <div id="results" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
